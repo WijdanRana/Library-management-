@@ -1,0 +1,23 @@
+class Library:
+  def __init__(self):
+    self.noBooks=0
+    self.Books=[]
+    
+  def addBook(self,book):
+    self.Books.append(book)
+    self.noBooks=len(self.Books)
+
+
+  def info(self):
+    print(f"There are {self.noBooks} books in the library and their names are ")
+    for books in self.Books:
+      print (books)
+
+lib1=Library()
+
+lib1.addBook("Chronicles of Narnia")
+lib1.addBook("Parizaad")
+lib1.addBook("Charlie and the Chocolate Factory")
+lib1.info()
+
+    
